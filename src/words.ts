@@ -1,5 +1,6 @@
 import { Word } from './word';
 import { Letter } from './letter';
+import { shuffleArray } from './shuffle-array';
 
 export class Words {
   constructor(wordsArray: string[]) {
@@ -30,5 +31,9 @@ export class Words {
 
   getWordsSuggestions(): string[] {
     return this._words.map(word => word.value);
+  }
+
+  getWordsSuggestionsShuffled(): string[] {
+    return shuffleArray(this.getWordsSuggestions());
   }
 }
