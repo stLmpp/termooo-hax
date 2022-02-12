@@ -2926,6 +2926,7 @@ export const wordsArray = [
   'MALHE',
   'MALHO',
   'MALTA',
+  'MALTO',
   'MAMAE',
   'MAMAI',
   'MAMAM',
